@@ -1,0 +1,62 @@
+[
+    {
+        "name": "PassportPhoto",
+        "technology":".Net",
+        "url":"https://github.com/Sudhakar85/PassportPhoto",
+        "description":"The Application developed in .Net , JQuery for Passport photo Editing"
+    },
+    {
+        "name": "IOT-Home-Automation",
+        "technology":"C",
+        "url":"https://github.com/Sudhakar85/IOT-Home-Automation",
+        "description":"Purpose of the project to control Arduino DF MP3 player through internet using ESP8266"
+    },
+    {
+        "name": "IOT-ESP8266",
+        "technology":"C",
+        "url":"https://github.com/Sudhakar85/IOT-ESP8266",
+        "description":"Setup ESP8266 Wemos D1 for IOT"
+    },
+    {
+        "name": "ArduinoMP3",
+        "technology":"C",
+        "url":"https://github.com/Sudhakar85/ArduinoMP3",
+        "description":"Arduino MP3 Player using DF Player"
+    },
+    {
+        "name": "IOT-ESP8266-WebServer",
+        "technology":"C",
+        "url":"https://github.com/Sudhakar85/IOT-ESP8266-WebServer",
+        "description":"ESP8266 with Webserver performing GET POST"
+    },
+    {
+        "name": "IOT-HomeTemperature-Monitor",
+        "technology":"C",
+        "url":"https://github.com/Sudhakar85/IOT-HomeTemperature-Monitor",
+        "description":"Monitor and Analysis your Home Temperature using Arduino ESP8266 and https://thingspeak.com"
+    },
+    {
+        "name": "LockSystem_ImageSlider_Faststone",
+        "technology":"C#",
+        "url":"https://github.com/Sudhakar85/LockSystem_ImageSlider_Faststone",
+        "description":"Application to Lock the windows system if aye one press any keyboard or mouse button"
+    },
+    {
+        "name": "MachineLearning-SLR",
+        "technology":"R Programming",
+        "url":"https://github.com/Sudhakar85/MachineLearning-SLR",
+        "description":"Simple Linear Regression Machine Learning Algorithm using R program"
+    },
+    {
+        "name": "REST-ISSTracker",
+        "technology":"Web API",
+        "url":"https://github.com/Sudhakar85/REST-ISSTracker",
+        "description":"REST API to Track and find the ISS - International Space Station coordination"
+    },    
+    {
+        "name": "PowerShell",
+        "technology":"PowerShell",
+        "url":"https://github.com/Sudhakar85/PowerShell",
+        "description":".Net Core Powershell script to add Environment variable while deploying"
+    }
+]
