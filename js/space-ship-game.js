@@ -1,10 +1,10 @@
-require([ "bower_components/threex.spaceships/package.require.js",
-		"bower_components/threex.spaceships/threex.spaceships-r69.js",
-		"bower_components/threex.spaceships/examples/vendor/three.js/examples/js/loaders/OBJLoader.js",
-        "bower_components/threex.spaceships/examples/vendor/three.js/examples/js/loaders/MTLLoader.js",
-        "bower_components/threex.keyboardstate/package.require.js",
-        "bower_components/threex.planets/package.require.js",
-        "bower_components/webaudiox/build/webaudiox.js"
+require([ "js/vendor/threex.spaceships/package.require.js",
+		"js/vendor/threex.spaceships/threex.spaceships-r69.js",
+		"js/vendor/threex.spaceships/loaders/OBJLoader.js",
+        "js/vendor/threex.spaceships/loaders/MTLLoader.js",
+        "js/vendor/threex.keyboardstate/package.require.js",
+        "js/vendor/threex.planets/package.require.js",
+        "js/vendor/webaudiox/webaudiox.js"
 		], function(){
 	// detect WebGL
 	if( !Detector.webgl ){
