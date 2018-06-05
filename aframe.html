@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://rawgit.com/IdeaSpaceVR/aframe-ui-modal-component/master/dist/aframe-ui-modal-component.min.js"></script> 
+    
+  <style>
+  a-scene1 {
+  height: 800px;
+  width: 1024px;
+}
+
+  </style>
+  </head>
+  <body>
+      <a-scene >
+          <a-assets>
+            <a-asset-item id="storeModel" src="/models/store.ply"></a-asset-item>
+            <a-asset-item id="laptop" src="/models/laptop.ply"></a-asset-item>
+          </a-assets>
+    
+          <a-entity camera look-controls>
+          <a-entity ply-model="src: #storeModel"  position="-10 -50 -2" scale="-1 1 1" rotation="-90 0 0" ></a-entity>
+
+          <a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 -25" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 -5" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 15" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 30" rotation="-90 90 0" ></a-entity>
+
+          </a-entity>
+
+          <a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 -25" rotation="-90 -45 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 -5" rotation="-90 -45 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 15" rotation="-90 -45 0" ></a-entity>
+          </a-entity> 
+
+          <a-entity> 
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="-13 -17 -43" rotation="-90 0 0" ></a-entity>
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="13 -28 -43" rotation="-90 0 0" ></a-entity>
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="-28 -28 -43" rotation="-90 0 0" ></a-entity>
+              
+          </a-entity>
+
+          <a-entity position="0 1.8 5">
+              <a-entity camera look-controls></a-entity>
+          </a-entity>
+
+          <a-entity ui-modal visible="false">
+              <a-plane width="5" height="2" color="green" position="0 0 0">
+                <a-text value="Product Spec" position="0 0 0" color="#BBB"></a-text>
+                <a-text value="Eyes:20" position="0 3 0" color="#BBB"></a-text>
+              </a-plane>             
+          </a-entity>
+
+          <a-camera>
+              <a-cursor></a-cursor>
+          </a-camera>
+        </a-entity>
+
+        </a-scene>
+    
+  </body>
+</html>
