@@ -1,110 +1,69 @@
-<!doctype html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>Sudhakar Projects</title>
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://rawgit.com/IdeaSpaceVR/aframe-ui-modal-component/master/dist/aframe-ui-modal-component.min.js"></script> 
     
-    <meta name="author" content="Sudhakar Annamalai">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+  <style>
+  a-scene1 {
+  height: 800px;
+  width: 1024px;
+}
 
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Towards The Infinite Journey</a>
-            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" target="_blank" href="/space-ship-game.html">ThreeJs Game</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container">
-            <img class="img-fluid mb-5 avatar" src="img/profile.png" alt="">
-            <h1 class="text-uppercase mb-0">Sudhakar Annamalai</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">MicroSoft Full Stack Developer, Angular 5</h2>
-            <h2 class="font-weight-light mb-0">IOT, Machine Learning</h2>
-        </div>
-    </header>
+  </style>
+  </head>
+  <body>
+      <a-scene >
+          <a-assets>
+            <a-asset-item id="storeModel" src="/models/store.ply"></a-asset-item>
+            <a-asset-item id="laptop" src="/models/laptop.ply"></a-asset-item>
+          </a-assets>
+    
+          <a-entity camera look-controls>
+          <a-entity ply-model="src: #storeModel"  position="-10 -50 -2" scale="-1 1 1" rotation="-90 0 0" ></a-entity>
 
-    <main>
-        <section id="projects" class="masthead">
-            <div class="container">
-                <ul class="fa-ul">
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer id="contact" class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Austin</h4>
-                    <p class="lead mb-0">2811 La Frontera Blvd,
-                        <br>Austink, TX - 78728</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/sudhakar.annamalai.9">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://plus.google.com/u/0/102660313374335439696">
-                                <i class="fa fa-fw fa-google-plus"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/sudhakar-annamalai-90863b43/">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">Hackster.io Projects</h4>
-                    <a target="new" href="https://www.hackster.io/sudhakarA/iot-arduino-esp8266-internet-controlled-mp3-player-f2bb77">
-                        IOT MP3 Player
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+          <a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 -25" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 -5" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 15" rotation="-90 90 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="-50 -9 30" rotation="-90 90 0" ></a-entity>
 
+          </a-entity>
 
-    <div class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>Copyright &copy; a.sudhakar85@gmail.com 2017</small>
-        </div>
-    </div>
+          <a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 -25" rotation="-90 -45 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 -5" rotation="-90 -45 0" ></a-entity>
+              <a-entity ply-model="src: #laptop" scale=".3 .3 .3" position="30 -8 15" rotation="-90 -45 0" ></a-entity>
+          </a-entity> 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
+          <a-entity> 
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="-13 -17 -43" rotation="-90 0 0" ></a-entity>
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="13 -28 -43" rotation="-90 0 0" ></a-entity>
+              <a-entity id="laptopModel" ply-model="src: #laptop" scale=".5 .5 .5" position="-28 -28 -43" rotation="-90 0 0" ></a-entity>
+              
+          </a-entity>
 
+          <a-entity position="0 1.8 5">
+              <a-entity camera look-controls></a-entity>
+          </a-entity>
+
+          <a-entity ui-modal visible="false">
+              <a-plane width="5" height="2" color="green" position="0 0 0">
+                <a-text value="Product Spec" position="0 0 0" color="#BBB"></a-text>
+                <a-text value="Eyes:20" position="0 3 0" color="#BBB"></a-text>
+              </a-plane>             
+          </a-entity>
+
+          <a-camera>
+              <a-cursor></a-cursor>
+          </a-camera>
+        </a-entity>
+
+        </a-scene>
+    
+  </body>
 </html>
